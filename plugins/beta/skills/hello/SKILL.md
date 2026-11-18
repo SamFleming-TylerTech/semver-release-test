@@ -4,3 +4,4 @@ description: Says hello from beta
 ---
 Hello from beta.
 Updated beta greeting.
+Typo fix for beta.
