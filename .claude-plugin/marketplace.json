@@ -1,0 +1,9 @@
+{
+  "name": "semver-release-test",
+  "owner": { "name": "Release workflow test" },
+  "description": "Scratch fixture for testing the automatic semver release workflow.",
+  "plugins": [
+    { "name": "alpha", "source": "./plugins/alpha", "description": "Fixture plugin alpha" },
+    { "name": "beta", "source": "./plugins/beta", "description": "Fixture plugin beta" }
+  ]
+}
