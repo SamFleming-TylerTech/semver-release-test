@@ -101,6 +101,7 @@ jobs:
           git switch -C release/next
           git add manifest.json plugins
           GIT_AUTHOR_DATE="$head_date" GIT_COMMITTER_DATE="$head_date" git commit -m "$title" -m "Released-through: $THROUGH"
+          sleep 120
           git push --force origin release/next
           if [ "$open_prs" != "0" ]; then
             gh pr edit release/next --title "$title" --body-file "$body_file"
